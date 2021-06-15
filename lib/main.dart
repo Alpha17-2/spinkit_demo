@@ -15,6 +15,25 @@ class MyApp extends StatelessWidget {
 
 class home extends StatelessWidget {
 
+  final List<String> nameOfSpinners =['DoubleBounce',
+    'Circle',
+    'CubeGrid',
+    'HourGlass',
+    'RotatingCircle',
+    'Wave',
+    'ChasingDots',
+    'DualRing',
+    'FadingCircle',
+    'FadingCube',
+    'FadingGrid',
+    'FadingFour',
+    'PouringHourglass',
+    'PumpingHeart',
+    'SpinningCircle',
+    'WanderingCubes',
+    'SquareCircle',
+    'RotatingPlain'
+  ];
   final List<Widget> spinners = [
     spinner0(),spinner1(),spinner2(),spinner3(),spinner4(),spinner5(),spinner6(),spinner7(),spinner8(),
     spinner9(),spinner10(),spinner11(),spinner12(),spinner13(),spinner14(),spinner15(),spinner16()
@@ -33,7 +52,7 @@ class home extends StatelessWidget {
         padding: const EdgeInsets.all(10.0),
         child: GridView.builder(
             gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
+              crossAxisCount: 3,
               crossAxisSpacing: 15,
               mainAxisSpacing: 15,
             ),
@@ -41,7 +60,7 @@ class home extends StatelessWidget {
               return AnimationConfiguration.staggeredGrid (
                 duration: Duration(seconds: 1),
                 position: index,
-                columnCount: 2,
+                columnCount: 3,
                 child: FadeInAnimation(
                   child: SlideAnimation(
                     child: Container(
@@ -49,7 +68,16 @@ class home extends StatelessWidget {
                         borderRadius: BorderRadius.circular(15),
                         border: Border.all(color: Colors.black,width: 1),
                       ),
-                      child: spinners[index],
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          SizedBox(height: 35,),
+                          spinners[index],
+                          SizedBox(height: 18,),
+                          Text(nameOfSpinners[index],overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,),),
+                        ],
+                      ),
                     ),
                   ),
                 ),
