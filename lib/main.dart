@@ -17,7 +17,8 @@ class home extends StatelessWidget {
 
   final List<Widget> spinners = [
     spinner0(),spinner1(),spinner2(),spinner3(),spinner4(),spinner5(),spinner6(),spinner7(),spinner8(),
-    spinner9(),spinner10(),spinner11(),spinner12(),
+    spinner9(),spinner10(),spinner11(),spinner12(),spinner13(),spinner14(),spinner15(),spinner16()
+    ,spinner17()
   ];
   @override
   Widget build(BuildContext context) {
@@ -44,6 +45,7 @@ class home extends StatelessWidget {
                   child: SlideAnimation(
                     child: Container(
                       decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(15),
                         border: Border.all(color: Colors.black,width: 1),
                       ),
                       child: spinners[index],

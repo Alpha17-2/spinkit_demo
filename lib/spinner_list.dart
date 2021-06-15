@@ -4,7 +4,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 Widget spinner0(){
   return Container(
    child: SpinKitDoubleBounce(
-     color: Colors.red,
+     color: Colors.blue[600],
      size: 50,
    ),
   );
@@ -12,7 +12,7 @@ Widget spinner0(){
 Widget spinner1(){
   return Container(
     child: SpinKitCircle(
-      color: Colors.red,
+      color: Colors.purple[800],
       size: 50,
     ),
   );
@@ -20,7 +20,7 @@ Widget spinner1(){
 Widget spinner2(){
   return Container(
     child: SpinKitCubeGrid(
-      color: Colors.red,
+      color: Colors.blue,
       size: 50,
     ),
   );
@@ -29,7 +29,7 @@ Widget spinner2(){
 Widget spinner3(){
   return Container(
     child: SpinKitHourGlass(
-      color: Colors.red,
+      color: Colors.yellow,
       size: 50,
     ),
   );
@@ -38,7 +38,7 @@ Widget spinner3(){
 Widget spinner4(){
   return Container(
     child: SpinKitRotatingCircle(
-      color: Colors.red,
+      color: Colors.green,
       size: 50,
     ),
   );
@@ -57,7 +57,7 @@ Widget spinner5(){
 Widget spinner6(){
   return Container(
     child: SpinKitChasingDots(
-      color: Colors.red,
+      color: Colors.purpleAccent,
       size: 50,
     ),
   );
@@ -66,7 +66,7 @@ Widget spinner6(){
 Widget spinner7(){
   return Container(
     child: SpinKitDualRing(
-      color: Colors.red,
+      color: Colors.teal[200],
       size: 50,
     ),
   );
@@ -75,7 +75,7 @@ Widget spinner7(){
 Widget spinner8(){
   return Container(
     child: SpinKitFadingCircle(
-      color: Colors.red,
+      color: Colors.green,
       size: 50,
     ),
   );
@@ -84,7 +84,7 @@ Widget spinner8(){
 Widget spinner9(){
   return Container(
     child: SpinKitFadingCube(
-      color: Colors.red,
+      color: Colors.purple,
       size: 50,
     ),
   );
@@ -93,7 +93,7 @@ Widget spinner9(){
 Widget spinner10(){
   return Container(
     child: SpinKitFadingGrid(
-      color: Colors.red,
+      color: Colors.black38,
       size: 50,
     ),
   );
@@ -101,7 +101,7 @@ Widget spinner10(){
 Widget spinner11(){
   return Container(
     child: SpinKitFadingFour(
-      color: Colors.red,
+      color: Colors.orangeAccent,
       size: 50,
     ),
   );
@@ -110,16 +110,17 @@ Widget spinner11(){
 Widget spinner12(){
   return Container(
     child: SpinKitPouringHourglass(
-      color: Colors.red,
+      color: Colors.teal,
       size: 50,
     ),
   );
 }
 
+
 Widget spinner13(){
   return Container(
-    child: SpinKitPulse(
-      color: Colors.red,
+    child: SpinKitPumpingHeart(
+      color: Colors.yellow,
       size: 50,
     ),
   );
@@ -127,25 +128,25 @@ Widget spinner13(){
 
 Widget spinner14(){
   return Container(
-    child: SpinKitPumpingHeart(
-      color: Colors.red,
+    child: SpinKitSpinningCircle(
+      color: Colors.pinkAccent,
+      size: 50,
+    ),
+  );
+}
+Widget spinner15(){
+  return Container(
+    child: SpinKitWanderingCubes(
+      color: Colors.green[600],
       size: 50,
     ),
   );
 }
 
-Widget spinner15(){
-  return Container(
-    child: SpinKitSpinningCircle(
-      color: Colors.red,
-      size: 50,
-    ),
-  );
-}
 Widget spinner16(){
   return Container(
-    child: SpinKitWanderingCubes(
-      color: Colors.red,
+    child: SpinKitSquareCircle(
+      color: Colors.blue[300],
       size: 50,
     ),
   );
@@ -153,26 +154,8 @@ Widget spinner16(){
 
 Widget spinner17(){
   return Container(
-    child: SpinKitSquareCircle(
-      color: Colors.red,
-      size: 50,
-    ),
-  );
-}
-
-Widget spinner18(){
-  return Container(
     child: SpinKitRotatingPlain(
-      color: Colors.red,
-      size: 50,
-    ),
-  );
-}
-
-Widget spinner19(){
-  return Container(
-    child: SpinKitPulse(
-      color: Colors.red,
+      color: Colors.black,
       size: 50,
     ),
   );
