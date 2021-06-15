@@ -79,7 +79,7 @@ class home extends StatelessWidget {
                           SizedBox(height: 18,),
                           Padding(
                             padding: const EdgeInsets.only(left:8.0,right: 8.0),
-                            child: Text(nameOfSpinners[index],overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,color: Colors.white70),),
+                            child: Text(nameOfSpinners[index],overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,color: Colors.white),),
                           ),
                         ],
                       ),
