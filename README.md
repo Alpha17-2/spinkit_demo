@@ -4,6 +4,10 @@
 
 Demo application to show different types of spinkit animations
 
+<p>
+	<img src="https://github.com/Alpha17-2/spinkit_demo/blob/master/ss/spinkit_demo.gif" width="1050" height="450"  />
+</p>
+
 ## How to use
 
 Add this to dependencies :
