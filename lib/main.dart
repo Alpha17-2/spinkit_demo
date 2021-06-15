@@ -26,6 +26,7 @@ class home extends StatelessWidget {
       appBar: AppBar(title: Text(
         'Spinkit Demo',
       ),
+        centerTitle: true,
         backgroundColor: Colors.black54,
       ),
       body: Padding(
