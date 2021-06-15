@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:spinkit_demo/spinner_list.dart';
+import 'package:flutter_staggered_animations/flutter_staggered_animations.dart';
 
 void main() => runApp(MyApp());
 
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
 class home extends StatelessWidget {
 
   final List<Widget> spinners = [
-    spinner0(),spinner1(),spinner2(),spinner3(),spinner4(),spinner5()
+    spinner0(),spinner1(),spinner2(),spinner3(),spinner4(),spinner5(),spinner6(),spinner7(),spinner8(),
+    spinner9(),spinner10(),spinner11(),spinner12(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -34,11 +36,20 @@ class home extends StatelessWidget {
               mainAxisSpacing: 15,
             ),
             itemBuilder: (context,index){
-              return Container(
-                decoration: BoxDecoration(
-                  border: Border.all(color: Colors.black,width: 1),
+              return AnimationConfiguration.staggeredGrid (
+                duration: Duration(seconds: 1),
+                position: index,
+                columnCount: 2,
+                child: FadeInAnimation(
+                  child: SlideAnimation(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.black,width: 1),
+                      ),
+                      child: spinners[index],
+                    ),
+                  ),
                 ),
-                child: spinners[index],
               );
             },
           itemCount: spinners.length,
