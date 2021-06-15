@@ -44,9 +44,10 @@ class home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: Text(
         'Spinkit Demo',
+        style: TextStyle(color: Colors.black87),
       ),
         centerTitle: true,
-        backgroundColor: Colors.pink[400],
+        backgroundColor: Colors.teal[300],
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
@@ -58,7 +59,7 @@ class home extends StatelessWidget {
             ),
             itemBuilder: (context,index){
               return AnimationConfiguration.staggeredGrid (
-                duration: Duration(seconds: 1),
+                duration: Duration(seconds: 2),
                 position: index,
                 columnCount: 3,
                 child: FadeInAnimation(
@@ -67,6 +68,7 @@ class home extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(15),
                         border: Border.all(color: Colors.black,width: 1),
+                        color: Colors.black,
                       ),
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -77,7 +79,7 @@ class home extends StatelessWidget {
                           SizedBox(height: 18,),
                           Padding(
                             padding: const EdgeInsets.only(left:8.0,right: 8.0),
-                            child: Text(nameOfSpinners[index],overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,),),
+                            child: Text(nameOfSpinners[index],overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,color: Colors.white70),),
                           ),
                         ],
                       ),
