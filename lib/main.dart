@@ -46,7 +46,7 @@ class home extends StatelessWidget {
         'Spinkit Demo',
       ),
         centerTitle: true,
-        backgroundColor: Colors.black54,
+        backgroundColor: Colors.pink[400],
       ),
       body: Padding(
         padding: const EdgeInsets.all(10.0),
@@ -75,7 +75,10 @@ class home extends StatelessWidget {
                           SizedBox(height: 35,),
                           spinners[index],
                           SizedBox(height: 18,),
-                          Text(nameOfSpinners[index],overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,),),
+                          Padding(
+                            padding: const EdgeInsets.only(left:8.0,right: 8.0),
+                            child: Text(nameOfSpinners[index],overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 15,),),
+                          ),
                         ],
                       ),
                     ),

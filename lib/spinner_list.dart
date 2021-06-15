@@ -2,161 +2,125 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 Widget spinner0(){
-  return Container(
-   child: SpinKitDoubleBounce(
+  return  SpinKitDoubleBounce(
      color: Colors.blue[600],
      size: 30,
-   ),
   );
 }
 Widget spinner1(){
-  return Container(
-    child: SpinKitCircle(
+  return SpinKitCircle(
       color: Colors.purple[800],
       size: 30,
-    ),
   );
 }
 Widget spinner2(){
-  return Container(
-    child: SpinKitCubeGrid(
+  return SpinKitCubeGrid(
       color: Colors.blue,
       size: 30,
-    ),
   );
 }
 
 Widget spinner3(){
-  return Container(
-    child: SpinKitHourGlass(
+  return SpinKitHourGlass(
       color: Colors.yellow,
       size: 30,
-    ),
   );
 }
 
 Widget spinner4(){
-  return Container(
-    child: SpinKitRotatingCircle(
+  return SpinKitRotatingCircle(
       color: Colors.green,
       size: 30,
-    ),
   );
 }
 
 
 Widget spinner5(){
-  return Container(
-    child: SpinKitWave(
+  return SpinKitWave(
       color: Colors.red,
       size: 30,
-    ),
   );
 }
 
 Widget spinner6(){
-  return Container(
-    child: SpinKitChasingDots(
+  return SpinKitChasingDots(
       color: Colors.purpleAccent,
       size: 30,
-    ),
   );
 }
 
 Widget spinner7(){
-  return Container(
-    child: SpinKitDualRing(
+  return SpinKitDualRing(
       color: Colors.teal[200],
       size: 30,
-    ),
   );
 }
 
 Widget spinner8(){
-  return Container(
-    child: SpinKitFadingCircle(
+  return SpinKitFadingCircle(
       color: Colors.green,
       size: 30,
-    ),
   );
 }
 
 Widget spinner9(){
-  return Container(
-    child: SpinKitFadingCube(
+  return SpinKitFadingCube(
       color: Colors.purple,
       size: 30,
-    ),
   );
 }
 
 Widget spinner10(){
-  return Container(
-    child: SpinKitFadingGrid(
+  return SpinKitFadingGrid(
       color: Colors.black38,
       size: 30,
-    ),
   );
 }
 Widget spinner11(){
-  return Container(
-    child: SpinKitFadingFour(
+  return SpinKitFadingFour(
       color: Colors.orangeAccent,
       size: 30,
-    ),
   );
 }
 
 Widget spinner12(){
-  return Container(
-    child: SpinKitPouringHourglass(
+  return SpinKitPouringHourglass(
       color: Colors.teal,
       size: 30,
-    ),
   );
 }
 
 
 Widget spinner13(){
-  return Container(
-    child: SpinKitPumpingHeart(
+  return SpinKitPumpingHeart(
       color: Colors.yellow,
       size: 30,
-    ),
   );
 }
 
 Widget spinner14(){
-  return Container(
-    child: SpinKitSpinningCircle(
+  return SpinKitSpinningCircle(
       color: Colors.pinkAccent,
       size: 30,
-    ),
   );
 }
 Widget spinner15(){
-  return Container(
-    child: SpinKitWanderingCubes(
+  return SpinKitWanderingCubes(
       color: Colors.green[600],
       size: 30,
-    ),
   );
 }
 
 Widget spinner16(){
-  return Container(
-    child: SpinKitSquareCircle(
+  return SpinKitSquareCircle(
       color: Colors.blue[300],
       size: 30,
-    ),
   );
 }
 
 Widget spinner17(){
-  return Container(
-    child: SpinKitRotatingPlain(
+  return SpinKitRotatingPlain(
       color: Colors.black,
       size: 30,
-    ),
   );
 }
